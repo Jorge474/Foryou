@@ -1,0 +1,98 @@
+ñ<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Nuestro Mundo ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="game"></canvas>
+
+<!-- 📖 LIBRO BONITO -->
+<div id="bookModal" class="hidden">
+    <div class="bookWindow">
+        <div class="bookPage">
+            <p id="bookText"></p>
+            <button onclick="closeBook()">Cerrar 📖</button>
+        </div>
+    </div>
+</div>
+
+<!-- 💻 LAPTOP -->
+<!-- 💻 LAPTOP DESKTOP -->
+<div id="laptopModal" class="hidden">
+
+    <div class="laptopWindow">
+
+        <div class="desktop">
+
+            <div class="icon" onclick="openApp('suenos')">
+                💭
+                <span>Sueños contigo</span>
+            </div>
+
+            <div class="icon" onclick="openApp('amo')">
+                ❤️
+                <span>Lo que amo de ti</span>
+            </div>
+
+            <div class="icon" onclick="openApp('imagenes')">
+                🖼️
+                <span>Imágenes</span>
+            </div>
+
+            <div class="icon" onclick="openApp('mensajes')">
+                💌
+                <span>Mensajes</span>
+            </div>
+
+        </div>
+
+        <button class="closeLaptop" onclick="closeLaptop()">
+            Cerrar 💻
+        </button>
+
+    </div>
+</div>
+
+<div id="flowerModal" class="modal hidden">
+    <div class="flowerWindow">
+
+        <div class="flowerContent">
+
+            <img src="img/daliaa.png" class="daliaImg">
+
+            <div class="flowerText">
+                <p>No conozco nada más hermoso que verte sonreir y verte ser la que siempre eres,sin duda eres maravillosa y la o el que diga lo contrario es envidioso :3</p>
+                <p>Te amo mi cielo,me hiciste creer en que alguien me puede hacer sentir amado y me das el placer de amarte,sinceramente te mereces esto y más, eres lo más valioso que tengo,espero te guste mi niña bonita lo hice con mucho cariño. 😌</p>
+            </div>
+
+        </div>
+
+        <button onclick="closeFlower()">Cerrar</button>
+
+    </div>
+</div>
+
+
+<!-- 🪟 VENTANA APP -->
+<div id="appModal" class="hidden">
+    <div class="appWindow">
+        <h2 id="appTitle"></h2>
+        <p id="appContent"></p>
+        <button onclick="closeApp()">Cerrar</button>
+    </div>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="music/Te amo.mp3" type="audio/mpeg">
+</audio>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
